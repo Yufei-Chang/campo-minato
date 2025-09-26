@@ -2,10 +2,18 @@ body {
     font-family: sans-serif;
     background-color: wheat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
+}
+
+.utility-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 #griglia {
@@ -27,4 +35,18 @@ body {
 
 .cella:hover{
     background-color: lightslategray;
+}
+
+#restart-btn {
+    color: azure;
+    background-color:skyblue;
+    border-radius: 20px;
+    border: 1px solid powderblue;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 5px;
+}
+
+#restart-btn:hover{
+    background-color:aqua ;
+    transform: scale(1.1);
 }
